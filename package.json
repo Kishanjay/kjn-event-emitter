@@ -2,6 +2,7 @@
   "name": "@kjn/event-emitter",
   "version": "1.0.0",
   "description": "Simple event emitter",
+  "main": "src/index.ts",
   "scripts": {
     "prepare": "husky install",
     "lint": "eslint .",
