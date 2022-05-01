@@ -31,7 +31,7 @@ export default class EventEmitter {
   }
 
   $emit(eventType: string, data: unknown) {
-    const handlers = Object.values(this.handlers[eventType]);
+    const handlers = Object.values(this.handlers[eventType] || {});
 
     for (const handler of handlers) {
       handler(data);
